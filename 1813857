@@ -1,0 +1,2 @@
+taskkill /f /t /im xx. exe
+%0
